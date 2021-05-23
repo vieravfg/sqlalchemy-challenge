@@ -133,8 +133,7 @@ def start(start):
     for sd in all_startdates:
         if sd == start:
             new_results = session.query(func.min(Measurement.tobs),func.max(Measurement.tobs),func.avg(Measurement.tobs), Measurement.date).\
-            filter(Measurement.date >= start).group_by(Measurement.date).\
-            order_by(Measurement.date).all()
+            filter(Measurement.date >= start).all()
         
             temp_list = []
 
@@ -156,8 +155,7 @@ def start_end(start,end):
     # Calculate TMIN, TAVG, and TMAX
 
     results = session.query(func.min(Measurement.tobs), func.max(Measurement.tobs),func.avg(Measurement.tobs), Measurement.date).\
-    filter(Measurement.date >= start).filter(Measurement.date <= end).group_by(Measurement.date).\
-    order_by(Measurement.date).all()
+    filter(Measurement.date >= start).filter(Measurement.date <= end).all()
     
     temp_list = []
     for min, max, avg, date in results:
