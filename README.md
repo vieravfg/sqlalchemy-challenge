@@ -8,4 +8,4 @@ I am uploading the following files to my repository:
 
 * [Bonus_01](Bonus/temp_analysis_bonus_1_starter.ipynb) - Jupiter Notebook
 
-* [Bonus_02](Bonus/temp_analysis_bonus_2_starter.ipynb) - Jupiter Notebook (Incomplete)
+* [Bonus_02](Bonus/temp_analysis_bonus_2_starter.ipynb) - Jupiter Notebook (Uncompleted)
